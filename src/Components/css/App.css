@@ -1,0 +1,148 @@
+.Header {
+  text-align: center;
+}
+
+.App {
+  background-color: #BBDEFB;
+  border: solid 3px rgb(0, 0, 0);
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  display: flow-root;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
+}
+
+.profile {
+  color: rgb(0, 0, 0);
+  margin: 5px;
+  padding: 1rem; 
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+#profile-id {
+  font-size: 1.5rem;
+  color: rgb(112, 4, 4);
+  margin: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.Education, .Employment, .Statement, .Testimonials, .Contact { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.8rem;
+  padding: 1rem;
+  border-radius: 0.4rem;
+  background-color: rgb(210, 235, 247);
+  border: solid 3px rgb(158, 7, 7);
+}
+
+.About {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.8rem;
+  padding: 1rem; 
+  background-color: rgb(210, 235, 247); 
+}
+
+.Education-container, .Employment-container, .Statement-container, .About-container, .Testimonials-container, .Testimonials-text, .Contact-container { 
+  flex-direction: column; 
+  margin: 1rem;
+  padding: 1rem;
+  background-color: white;
+}
+
+.Testimonials-text {
+  border: solid 2px rgb(239, 127, 127);
+  background-color: rgb(247, 219, 219); 
+}
+
+.Testimonials-container {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  max-height: 50vh;
+  overflow: scroll;
+}
+
+.Profile-about, .Education-employment {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0.8rem;
+  padding: 1rem;
+  border-radius: 0.4rem;
+  background-color: rgb(210, 235, 247);
+  border: solid 3px rgb(158, 7, 7);
+}
+
+.HireButton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; 
+}
+
+h3 { 
+  font-size: 1.3rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+ 
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .Profile-about, .Education-employment {
+    flex-direction: column;    
+    padding: 0px;
+  }
+
+  .About {
+    padding: 0px;
+  }
+
+  .About-container {
+    margin: 0.4rem;
+    padding: 0.4rem;
+  }
+}   
